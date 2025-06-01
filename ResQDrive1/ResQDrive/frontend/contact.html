@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - ResQDrive</title>
+    <link rel="stylesheet" href="contactstyles.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have questions or need assistance? Reach out to us!</p>
+
+      <div class="contact-details">
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Email:</strong> support@resqdrive.com</p>
+        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+      </div>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p id="form-message" class="error-message"></p>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

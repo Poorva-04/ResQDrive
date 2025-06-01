@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mechanic Home | ResQDrive</title>
+    <link rel="stylesheet" href="mechanic-home.css" />
+    <script defer src="mechanic-home.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="../images/icon.jpg" alt="ResQDrive Logo" class="logo" />
+      <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+      <section>
+        <h2>New Service Requests</h2>
+        <div id="newRequests"></div>
+      </section>
+
+      <section>
+        <h2>Accepted Requests</h2>
+        <div id="acceptedRequests"></div>
+      </section>
+
+      <section>
+        <h2>Rejected Requests</h2>
+        <div id="rejectedRequests"></div>
+      </section>
+    </main>
+
+    <!-- Modal Popup for Viewing Details -->
+    <div id="detailsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>Appointment Details</h2>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+  </body>
+</html>

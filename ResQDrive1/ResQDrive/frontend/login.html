@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - ResQDrive</title>
+    <link rel="stylesheet" href="loginstyles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img src="../images/icon.jpg" alt="icon" />
+      <h2>Login</h2>
+
+      <select id="userType">
+        <option value="User">User</option>
+        <option value="Admin">Admin</option>
+        <option value="Mechanic">Mechanic</option>
+      </select>
+
+      <input type="email" id="email" placeholder="Email ID" required />
+
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" onclick="togglePassword()"></span>
+      </div>
+
+      <div class="button-container">
+        <button id="signInBtn" class="btn">Sign In</button>
+        <button id="registerBtn" class="btn-register">Register</button>
+      </div>
+
+      <a href="#" class="forgot-password">Forgot Password</a>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

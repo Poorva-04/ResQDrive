@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #78B4C7;
+  margin: 0;
+}
+
+.login-container {  /* Fixed: Changed from .container to .login-container */
+  width: 350px;
+  padding: 20px;
+  background: #E8E2E2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-container img {
+  width: 100px;
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #333;
+  font-family: "Bree Serif", serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+input, select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Improve dropdown styling */
+select {
+  cursor: pointer;
+  appearance: none;
+  background: white url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23333' d='M2 0L0 2h4zM2 5L0 3h4z'/></svg>") no-repeat right 10px center;
+  background-size: 10px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #5a9db6;
+  box-shadow: 0 0 5px rgba(90, 157, 182, 0.5);
+}
+
+/* Password Container */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 40px; /* Prevents overlap with eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px; /* Increase click area */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #78B4C7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #5a9db6;
+  outline: none;
+}
+
+.btn-register {
+  background-color: #78B4C7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-register:hover {
+  background-color: #5a9db6;
+  outline: none;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #78B4C7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}

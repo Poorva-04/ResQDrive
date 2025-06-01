@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #78B4C7;
+  margin: 0;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background: #E8E2E2; /* Fixed missing semicolon */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #333;
+  font-family: "Bree Serif", serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Password Container */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Prevents overlap with eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Register Button */
+.btn-register {
+  background-color: #78B4C7;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  background-color: #5a9db6;
+}
+
+/* Login Link */
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p a {
+  color: #78B4C7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover { /* Fixed hover issue */
+  text-decoration: underline;
+}

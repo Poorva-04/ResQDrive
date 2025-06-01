@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - ResQDrive</title>
+    <link rel="stylesheet" href="admin-dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">ResQDrive Admin</div>
+        <nav class="nav-links">
+          <a href="#" id="dashboard-link" class="active">Dashboard</a>
+          <a href="#" id="users-link">Manage Users</a>
+          <a href="#" id="mechanics-link">Manage Mechanics</a>
+          <a href="#" id="appointments-link">Manage Appointments</a>
+          <a href="#" id="logout-link">Logout</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+          <h1>Welcome, Admin!</h1>
+          <div class="stats">
+            <div class="stat-card">
+              <h2 id="total-users">0</h2>
+              <p>Users</p>
+            </div>
+            <div class="stat-card">
+              <h2 id="total-mechanics">0</h2>
+              <p>Mechanics</p>
+            </div>
+            <div class="stat-card">
+              <h2 id="total-appointments">0</h2>
+              <p>Appointments</p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Dynamic Section -->
+        <section class="content-area" id="content-area">
+          <!-- Content will dynamically load here -->
+        </section>
+      </main>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+  </body>
+</html>

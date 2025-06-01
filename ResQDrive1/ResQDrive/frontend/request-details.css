@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #5a9ec9;
+}
+
+.logo {
+    width: 50px;
+}
+
+#backButton {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.details-container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#acceptRequest {
+    background-color: green;
+    color: white;
+}
+
+#rejectRequest {
+    background-color: red;
+    color: white;
+}

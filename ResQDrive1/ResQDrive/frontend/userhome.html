@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Home - ResQDrive</title>
+    <link rel="stylesheet" href="userstyles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="back-button">&#8592;</a>
+      <h1>User Dashboard</h1>
+      <a href="logout.html" class="logout-icon">🔌</a>
+    </header>
+
+    <main>
+      <div class="grid">
+        <div class="card" onclick="location.href='view-mechanic.html?type=car'">
+          <img src="../images/car.png" alt="Car Mechanic" />
+          <p>Car Mechanic</p>
+        </div>
+        <div
+          class="card"
+          onclick="location.href='view-mechanic.html?type=truck'"
+        >
+          <img src="../images/truck.png" alt="Truck Mechanic" />
+          <p>Truck Mechanic</p>
+        </div>
+        <div
+          class="card"
+          onclick="location.href='view-mechanic.html?type=Two-wheeler'"
+        >
+          <img src="../images/bike.png" alt="Two-wheeler Mechanic" />
+          <p>Two-wheeler Mechanic</p>
+        </div>
+        <div
+          class="card"
+          onclick="location.href='view-mechanic.html?type=jeep'"
+        >
+          <img src="../images/Jeep.png" alt="Jeep Mechanic" />
+          <p>Jeep Mechanic</p>
+        </div>
+        <div
+          class="card"
+          onclick="location.href='view-mechanic.html?type=four-wheeler'"
+        >
+          <img src="../images/Truck-big.png" alt="Four-Wheeler Mechanic" />
+          <p>Four-Wheeler Mechanic</p>
+        </div>
+        <div class="card" onclick="location.href='check-status.html'">
+          <img
+            src="../images/appointments.png"
+            alt="Check Appointment Status"
+          />
+          <p>Check Appointment Status</p>
+        </div>
+      </div>
+      <h2 class="welcome-text">Welcome to ResQDrive!</h2>
+    </main>
+
+    <script src="userhome.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

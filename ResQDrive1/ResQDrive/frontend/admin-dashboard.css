@@ -1,0 +1,170 @@
+/* admin-dashboard.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #273c75;
+    color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #dcdde1;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #40739e;
+    color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+    margin-bottom: 30px;
+}
+
+.topbar h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    text-align: center;
+}
+
+.stat-card h2 {
+    font-size: 2.5rem;
+    color: #273c75;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #718093;
+}
+
+/* Content Area */
+.content-area {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+/* Tables inside content area */
+.content-area table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-area th, 
+.content-area td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.content-area th {
+    background-color: #f1f2f6;
+    font-weight: bold;
+}
+
+.content-area tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Buttons inside content */
+button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #273c75;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #40739e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        margin-bottom: 0;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Appointment Status</title>
+    <link rel="stylesheet" href="check-status.css" />
+    <script defer src="check-status.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="userhome.html" class="back-button">←</a>
+      <h1>Check Appointment Status</h1>
+    </header>
+
+    <main>
+      <div class="status-container">
+        <label for="appointmentId">Enter Appointment ID:</label>
+        <input
+          type="text"
+          id="appointmentId"
+          placeholder="Enter your Appointment ID"
+        />
+        <button id="checkStatusBtn">Check Status</button>
+      </div>
+
+      <div id="statusResult" class="status-result">
+        <!-- Appointment details will be displayed here -->
+      </div>
+    </main>
+  </body>
+</html>

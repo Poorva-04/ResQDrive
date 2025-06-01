@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Appointment</title>
+    <link rel="stylesheet" href="make-appointment.css" />
+    <script defer src="make-appointment.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="user-home.html" class="back-button">←</a>
+      <img src="../images/icon.jpg" alt="ResQDrive Logo" class="logo" />
+      <h1>Make an Appointment</h1>
+    </header>
+
+    <main>
+      <div class="appointment-container">
+        <h2>Mechanic Details</h2>
+        <p><strong>Name:</strong> <span id="mechanicName"></span></p>
+        <p><strong>Contact:</strong> <span id="mechanicContact"></span></p>
+
+        <h2>Your Details</h2>
+        <form id="appointmentForm">
+          <label for="userName">Your Name:</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="vehicleType">Vehicle Type:</label>
+          <input
+            type="text"
+            id="vehicleType"
+            placeholder="Enter vehicle type"
+            required
+          />
+
+          <label for="issueDescription">Describe the Issue:</label>
+          <textarea
+            id="issueDescription"
+            placeholder="Describe your vehicle issue"
+            required
+          ></textarea>
+
+          <label for="appointmentDate">Select Date & Time:</label>
+          <input type="datetime-local" id="appointmentDate" required />
+
+          <button type="submit" id="submitAppointment">Book Appointment</button>
+
+          <div id="appointmentResult"></div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

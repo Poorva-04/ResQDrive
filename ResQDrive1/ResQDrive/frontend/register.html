@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register-ResQDrive</title>
+    <link rel="stylesheet" href="registerstyles.css" />
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+        <img src="../images/icon.jpg" alt="icon" />
+      </div>
+      <h2>Register</h2>
+      <form>
+        <select id="userType" required>
+          <option value="" disabled selected>Select User Type</option>
+          <option value="User">User</option>
+          <option value="Mechanic">Mechanic</option>
+        </select>
+
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="text" id="address" placeholder="Address" required />
+
+        <div class="password-container">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <span
+            class="toggle-password"
+            onclick="togglePassword('password')"
+          ></span>
+        </div>
+
+        <div class="password-container">
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+            required
+          />
+          <span
+            class="toggle-password"
+            onclick="togglePassword('confirm-password')"
+          ></span>
+        </div>
+
+        <button type="submit" class="btn-register">Create a account</button>
+      </form>
+
+      <p>Already have an account? <a href="login.html">Login Here</a></p>
+    </div>
+  </body>
+</html>

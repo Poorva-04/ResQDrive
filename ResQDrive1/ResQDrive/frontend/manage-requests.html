@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Requests | Admin</title>
+    <link rel="stylesheet" href="manage-request.css" />
+  </head>
+  <body>
+    <header>
+      <a href="admin-dashboard.html" class="back-button">←</a>
+      <h1>Manage Service Requests</h1>
+    </header>
+
+    <main>
+      <div class="requests-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Appointment ID</th>
+              <th>User Name</th>
+              <th>Vehicle Type</th>
+              <th>Mechanic Assigned</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="requestList">
+            <!-- Service requests will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="manage-request.js"></script>
+  </body>
+</html>

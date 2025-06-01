@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #78B4C7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #78B4C7;
+    padding: 8px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  
+  h1 {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  
+  .back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    float: left;
+    margin-left: 20px;
+  }
+  
+  .appointment-container {
+    background: #E8E2E2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    height: 80vh;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  input, textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  button {
+    background: #78B4C7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background: #a1d9ea;
+  }
+  
+  #appointmentResult {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

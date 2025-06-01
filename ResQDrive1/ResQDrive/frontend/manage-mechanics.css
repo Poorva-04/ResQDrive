@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #78B4C7;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.mechanic-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.mechanic-card {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mechanic-card button {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.approve-btn {
+    background: green;
+    color: white;
+}
+
+.reject-btn {
+    background: red;
+    color: white;
+}

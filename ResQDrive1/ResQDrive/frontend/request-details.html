@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Details | ResQDrive</title>
+    <link rel="stylesheet" href="request-details.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/icon.jpg" alt="ResQDrive Logo" class="logo" />
+      <button id="backButton">Back</button>
+    </header>
+
+    <div class="details-container">
+      <h2>Service Request Details</h2>
+      <p><strong>Request ID:</strong> <span id="reqId"></span></p>
+      <p><strong>User:</strong> <span id="reqUser"></span></p>
+      <p><strong>Vehicle:</strong> <span id="reqVehicle"></span></p>
+      <p><strong>Issue:</strong> <span id="reqIssue"></span></p>
+      <p><strong>Location:</strong> <span id="reqLocation"></span></p>
+
+      <button id="acceptRequest">Accept Request</button>
+      <button id="rejectRequest">Reject Request</button>
+    </div>
+
+    <script src="request-details.js"></script>
+  </body>
+</html>

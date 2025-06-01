@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #78B4C7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.logout-icon {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Welcome text */
+.welcome-text {
+    text-align: center;
+    margin: 20px auto;
+    background-color: #78B4C7;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    max-width: 80%;
+    margin:  0 auto;
+    margin-top: 100px;
+    
+}
+
+.card {
+    background: #E8E2E2;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0,3s ease-in-out;
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+@media(max-width: 900px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:600px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Welcome Text Styling */
+.welcome-text{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5ba1c7;
+    padding: 15px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+.welcome-text h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5ba1c7; /* Light blue background */
+    padding: 15px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px auto; 
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Font Size */
+@media (max-width: 600px) {
+    .welcome-text {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
