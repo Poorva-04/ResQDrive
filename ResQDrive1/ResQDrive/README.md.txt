@@ -27,3 +27,18 @@ Users can register, book mechanic appointments, and track service status.
 
 Poorva-04  
 poorvacmahajan04@gmail.com
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/homepage.png)
+
+### 👤 User Dashboard
+![User Dashboard](screenshots/user-dashboard.png)
+
+### 🔧 Mechanic Dashboard
+![Mechanic Dashboard](screenshots/mechanic-dashboard.png)
+
+### 🛠️ Admin Panel
+![Admin Panel](screenshots/admin-panel.png)
+
